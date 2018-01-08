@@ -1,0 +1,203 @@
+.lf{
+    float:left;
+}
+.rt{
+    float:right;
+}
+.clear{
+    clear:both;
+}
+ul,ol,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+    list-style:none;
+}
+*{
+    margin:0;
+    padding:0;
+}
+/*表单集合*/
+.fromG-item-jdf{
+    margin-bottom: 15px;
+    clear: both;
+}
+.fromG-item-jdf:after{
+    content: '\20';
+    clear: both;
+    display: block;
+    height: 0;
+}
+.fromG-label-jdf{
+    float: left;
+    display: block;
+    padding: 9px 15px;
+    width: 80px;
+    font-weight: 400;
+    text-align: right;
+}
+.fromG-inputBlock-jdf{
+    margin-left: 110px;
+    min-height: 36px;
+}
+.fromG-input-jdf{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    height: 38px;
+    line-height: 1.3;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.inlineG-jdf{
+    float: left;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.input-inlineG-jdf{
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+}
+.form-mid-jdf{
+    float: left;
+    display: block;
+    padding: 8px 0!important;
+    margin-right: 10px;
+    line-height: 20px;
+    position: relative;
+}
+.word-aux-jdf{
+    color: #999!important;
+}
+.fromG-select-jdf{
+    display:none;
+}
+.filter-text-jdf{
+    position:relative;
+}
+.iconF {
+    position: absolute;
+}
+.icon-filter-arrow{
+    width: 8px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-image: url(icon_arrow_down_x2.png);
+    background-size: 100%;
+    right: 10px;
+    top: 13px;
+    transition: all .2s;
+}
+/*js插件filter-show控制箭头*/
+.filter-show{
+    -webkit-transform: rotate(-180deg);
+     transform: rotate(-180deg);
+}
+/*js插件控制的css*/
+.filter-list li:hover {
+    background-color: #f2f2f2;
+}
+.filter-disabled {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background-color: #fff;
+}
+.filter-disabled a{
+    display: block;
+    color: #d2d2d2;
+}
+.filter-list li.filter-disabled:hover a {
+    cursor: not-allowed!important;
+    background-color: #fff;
+}
+/*js插件filter-selected控制颜色*/
+.filter-list li.filter-selected {
+    background-color: #5FB878;
+}
+.filter-list li.filter-selected a{
+    display: block;
+    color: #fff;
+}
+/*改变滚动样式*/
+.filter-list::-webkit-scrollbar {/*滚动条整体样式*/
+    width:8px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height:100%;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.filter-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+.filter-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+/*隐藏的ul样式*/
+.filter-list{
+    display: none;
+    width: 94%;
+    max-height: 300px;
+    background-color: #fff;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    border: 1px solid #e6e6e6;
+    overflow: auto;
+    margin-left:110px;
+}
+.filter-list li.filter-null a {
+    color: #d2d2d2;
+}
+
+.filter-list li a {
+    display: block;
+    padding: 0 10px;
+    line-height: 36px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.filter-box-jdf{position:relative;}
+.textareaJh-jdf{
+    min-height: 100px;
+    height: auto;
+    padding: 6px 10px;
+    resize: vertical;
+    display: block;
+    width: 98%;
+    border-color: #e6e6e6;
+}
+.fromG-btnBlock-jdf{margin-top:20px;}
+.fromG-btn{
+    display: inline-block;
+    height: 38px;
+    padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.fromG-btn-reset{
+    border: 1px solid #C9C9C9;
+    background-color: #fff;
+    color: #555;
+}
+/*表单集合结束*/

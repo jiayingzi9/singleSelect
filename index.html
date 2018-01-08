@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="singleSelect.css">
+    <script src="jquery-1.12.4.js"></script>
+</head>
+<body>
+<!--表单集合-->
+<h3 style="background-color: #aaaaaa;color: #FFFFFF;line-height: 40px;padding-left: 20px;font-weight: bold;">单行选择框</h3>
+<form class="formGather-jdf" style="margin-top:20px;">
+    <div class="fromG-item-jdf">
+        <div class="filter-box-jdf">
+            <div class="filter-text-jdf">
+                <label class="fromG-label-jdf">单行选择框</label>
+                <div class="fromG-inputBlock-jdf filter-input">
+                    <input type="text" placeholder="请输入标题" class="filter-title-jdf fromG-input-jdf">
+                </div>
+                <i class="iconF icon-filter-arrow filter-show"></i>
+            </div>
+            <select name="filter" class="fromG-select-jdf">
+                <option value="select" selected>请选择</option>
+                <option value="1" disabled>111</option>
+                <option value="2">222</option>
+                <option value="3">333</option>
+                <option value="4">444</option>
+                <option value="5">555</option>
+                <option value="6">666</option>
+                <option value="7">777</option>
+                <option value="8">888</option>
+                <option value="9">999</option>
+            </select>
+        </div>
+    </div>
+</form>
+<script src="singleSelect.js"></script>
+<script type="text/javascript">
+//    *  option---selected默认选择状态
+//    *  option---disabled不能选中
+$('.filter-box-jdf').select({
+    callBack : function (val){
+        //返回选择的值
+        console.log(val+'-是返回的值')
+    }
+});
+</script>
+</body>
+</html>
